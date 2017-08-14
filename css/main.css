@@ -1,0 +1,61 @@
+@charset "iso-8859-2";
+/* CSS Document */
+
+#this-page-needs-files TD {
+	position: relative;
+	padding: 0;
+	vertical-align: middle;
+	text-align: center;
+	height: 100%;
+}
+
+#this-page-needs-files TD:min {
+	width: 0;
+}
+
+#this-page-needs-files INPUT[type="text"]
+, #this-page-needs-files SELECT
+, #this-page-needs-files INPUT[type="text"] + SPAN
+{
+	display: block;
+	font: inherit;	
+	font-size: 100%;
+	margin: 0;
+	padding: 0.2rem;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	border-width: 0.1rem;
+	line-height: normal;
+	height: 100%;
+	/* IE fix */
+	min-height: 1.6rem;
+}
+
+#this-page-needs-files .tpnf-fileName + SPAN {
+	min-width: 14em;
+}
+
+#this-page-needs-files .tpnf-id + SPAN {
+	min-width: 2em;
+}
+
+#this-page-needs-files .tpnf-priority + SPAN {
+	min-width: 4em;
+}
+
+#this-page-needs-files INPUT[type="text"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#this-page-needs-files INPUT[type="text"] + SPAN {
+	margin-left: 1em;
+	visibility: hidden;
+	white-space: nowrap;
+}
+
+#this-page-needs-files .tpnf-relative {
+	width: 7em;
+}
